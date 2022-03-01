@@ -11,5 +11,12 @@ public class CreateFilesBasedOnState {
         Scanner input = new Scanner(System.in);
         Path inStateFile = Paths.get("InStateCusts.txt");
         Path outStateFile = Paths.get("OutStateCusts.txt");
+
+
+        
+
+
+
+
     }
 }
