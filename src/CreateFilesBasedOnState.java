@@ -9,5 +9,7 @@ import java.text.*;
 public class CreateFilesBasedOnState {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
+        Path inStateFile = Paths.get("InStateCusts.txt");
+        Path outStateFile = Paths.get("OutStateCusts.txt");
     }
 }
