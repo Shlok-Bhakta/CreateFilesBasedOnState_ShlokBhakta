@@ -40,16 +40,18 @@ public class CreateFilesBasedOnState {
 
     }
 
-    public static void createEmptyFile(Path file, String s){
+    public static void createEmptyFile(Path file, String s) {
         final int NUMRECS = 1000;
-        try{
+        try {
             OutputStream outputStr = new BufferedOutputStream(Files.newOutputStream(file, CREATE));
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(outputStr));
-            for(int count = 0; count < NUMRECS; ++count){
+            for (int count = 0; count < NUMRECS; ++count) {
                 writer.write(s, 0, s.length());
-            
+
             }
             writer.close();
+        } catch (Exception e) {
+            System.out.println("Error message: " + e);
         }
 
     }
