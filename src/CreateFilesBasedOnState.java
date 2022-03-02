@@ -39,4 +39,7 @@ public class CreateFilesBasedOnState {
 
 
     }
+    public static void createEmptyFile(Path file, String s){
+        
+    }
 }
