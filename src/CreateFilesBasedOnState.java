@@ -44,6 +44,11 @@ public class CreateFilesBasedOnState {
             idString = input.nextLine();
             while(!(idString.equals(QUIT))){ 
                 id = Integer.parseInt(idString);
+                System.out.print("Enter name for customer >> ");
+                name = input.nextLine();
+                StringBuilder sb = new StringBuilder(name);
+                sb.setLength(NAME_LENGTH);
+                name = sb.toString();
             }
         }
 
