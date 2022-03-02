@@ -40,6 +40,11 @@ public class CreateFilesBasedOnState {
         try{
             fcIn =(FileChannel)Files.newByteChannel(inStateFile, CREATE, WRITE);
             fcOut =(FileChannel)Files.newByteChannel(outOfStateFile, CREATE, WRITE);
+            System.out.print("Enter customer account number >> ");
+            idString = input.nextLine();
+            while(!(idString.equals(QUIT))){ 
+                id = Integer.parseInt(idString);
+            }
         }
 
     }
