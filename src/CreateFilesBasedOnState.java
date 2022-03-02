@@ -23,9 +23,14 @@ public class CreateFilesBasedOnState {
         String s = ID_FORMAT + delimiter + NAME_FORMAT +delimiter + HOME_STATE + delimiter + BALANCE_FORMAT + System.getProperty("line.seperator");
         final int RECSIZE = s.length();
 
-        
-        
-
+        FileChannel fcIn = null;
+        FileChannel fcOut = null;
+        String idString;
+        int id;
+        String name;
+        String state;
+        double balance;
+        final String QUIT = "999";
 
 
 
