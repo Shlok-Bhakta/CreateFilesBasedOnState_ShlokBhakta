@@ -33,6 +33,7 @@ public class CreateFilesBasedOnState {
         double balance;
         final String QUIT = "999";
 
+        //These 2 Lines Will Cause Erorr!
         createEmptyFile(inStateFile, s);
         createEmptyFile(outOfStateFile, s);
 
