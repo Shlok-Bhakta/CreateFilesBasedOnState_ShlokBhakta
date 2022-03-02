@@ -1,3 +1,4 @@
+
 import java.nio.file.*;
 import java.io.*;
 import java.nio.channels.FileChannel;
@@ -11,7 +12,7 @@ public class CreateFilesBasedOnState {
         Scanner input = new Scanner(System.in);
         //3
         Path inStateFile = Paths.get("InStateCusts.txt");
-        Path outStateFile = Paths.get("OutStateCusts.txt");
+        Path outOfStateFile = Paths.get("OutStateCusts.txt");
 
         //4
         final String ID_FORMAT = "000";
@@ -32,6 +33,8 @@ public class CreateFilesBasedOnState {
         double balance;
         final String QUIT = "999";
 
+        createEmptyFile(inStateFile, s);
+        createEmptyFile(outOfStateFile, s);
 
 
     }
