@@ -34,9 +34,13 @@ public class CreateFilesBasedOnState {
         double balance;
         final String QUIT = "999";
 
-        // These 2 Lines Will Cause Erorr!
+        
         createEmptyFile(inStateFile, s);
         createEmptyFile(outOfStateFile, s);
+        try{
+            fcIn =(FileChannel)Files.newByteChannel(inStateFile, CREATE, WRITE);
+            fcOut =(FileChannel)Files.newByteChannel(outOfStateFile, CREATE, WRITE);
+        }
 
     }
 
