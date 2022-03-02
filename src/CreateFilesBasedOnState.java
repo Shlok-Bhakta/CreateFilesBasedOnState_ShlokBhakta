@@ -40,6 +40,11 @@ public class CreateFilesBasedOnState {
 
     }
     public static void createEmptyFile(Path file, String s){
-        
+        final int NUMRECS = 1000;
+        try{
+            OutputStream outputStr = new BufferedOutputStream(Files.newOutputStream(file, CREATE));
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(outputStr));
+        }
+
     }
 }
