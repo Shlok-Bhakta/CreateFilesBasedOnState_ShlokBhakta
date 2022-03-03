@@ -66,12 +66,12 @@ public class CreateFilesBasedOnState {
                 }
                 System.out.print("Enter next customer account number or " + QUIT + " to quit >> ");
                 idString = input.nextLine();
-                fcIn.close();
-                fcOut.close();
+
             }
         }catch(Exception e){
             System.out.println("Error Message: " + e);
         }
+        input.close();
 
     }
 
