@@ -12,7 +12,7 @@ public class CreateFilesBasedOnState {
         Scanner input = new Scanner(System.in);
         Path inStateFile = Paths.get("InStateCusts.txt");
         Path outOfStateFile = Paths.get("OutStateCusts.txt");
-
+// Program does not have any correction for numbers such as 7 you would have to type 007 in order for everything to line up
         
         final String ID_FORMAT = "000";
         final String NAME_FORMAT = "          ";
@@ -53,7 +53,7 @@ public class CreateFilesBasedOnState {
                 balance = input.nextDouble();
                 input.nextLine();
                 DecimalFormat df = new DecimalFormat(BALANCE_FORMAT);
-                s = idString + delimiter + name + delimiter + state + delimiter + df.format(balance) + System.getProperty("line.separator");
+                s = idString + delimiter + name + delimiter + state + delimiter + df.format(balance);
                 byte data[] = s.getBytes();
                 ByteBuffer buffer = ByteBuffer.wrap(data);
                 if(state.equals(HOME_STATE)){
