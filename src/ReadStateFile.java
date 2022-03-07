@@ -26,8 +26,12 @@ public class ReadStateFile {
         String s = ID_FORMAT + delimiter + NAME_FORMAT + delimiter + HOME_STATE + delimiter + BALANCE_FORMAT + System.getProperty("line.separator");
         final int RECSIZE = s.length();
 
-        byte data[] = s.getBytes;
-        
+        byte data[] = s.getBytes();
+        final String EMPTY_ACCT = "000";
+        String[] array = new String[4];
+        double balance = 0;
+        double total = 0;
+
 
 
 
