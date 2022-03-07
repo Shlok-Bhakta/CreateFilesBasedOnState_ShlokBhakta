@@ -44,7 +44,28 @@ public class ReadStateFile {
             System.out.println("IO Exception");
         }
 
+        try{
+            InputStream iStream = new BufferedInputStream(Files.newInputStream(file));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(iStream));
+            System.out.println("\nAll non-default records:\n");
+            s = reader.readLine();
+            while(s != null){
+                array = s.split(delimiter);
+                if(!array[0].equals(EMPTY_ACCT)){
+                    balance = Double.parseDouble(array[3]);
+                    System.out.println("ID #" + array[0] + " " + array[1] + " " + array[2] + " $" + array[3]);
+                    total +=balance;
+                }
+                s = reader.readLine();
 
+            }
+            System.out.println("Total of all balances is $" + total);
+            
+
+
+        }catch{
+
+        }
 
 
 
