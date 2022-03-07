@@ -14,7 +14,7 @@ public class ReadStateFile {
         String fileName;
         System.out.print("Enter name of file to use >> ");
         fileName = kb.nextLine();
-        fileName = fileName;//idk but the file lives in this project folder so uhh....
+        //fileName = fileName;//idk but the file lives in this project folder so uhh....
         Path file = Paths.get(fileName);
         
         final String ID_FORMAT = "000";
@@ -32,6 +32,18 @@ public class ReadStateFile {
         double balance = 0;
         double total = 0;
 
+        try{
+            BasicFileAttributes attr = Files.readAttributes(file, BasicFileAttributes.class);
+            System.out.println("\nAttributes of the file");
+            System.out.println("Creation time " + attr.creationTime());
+            System.out.println("Size " + attr.size());
+            
+
+
+        } catch (IOException e) {
+            System.out.println("IO Exception");
+        }
+
 
 
 
@@ -42,9 +54,5 @@ public class ReadStateFile {
 
 
     }
-
-
-
-
 
 }

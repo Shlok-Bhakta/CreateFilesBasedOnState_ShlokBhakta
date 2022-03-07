@@ -11,7 +11,7 @@ public class CreateFilesBasedOnState {
     public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
         Path inStateFile = Paths.get("InStateCusts.txt");
-        Path outOfStateFile = Paths.get("OutStateCusts.txt");
+        Path outOfStateFile = Paths.get("OutOfStateCusts.txt");
 // Program does not have any correction for numbers such as 7 you would have to type 007 in order for everything to line up
         
         final String ID_FORMAT = "000";
