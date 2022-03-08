@@ -33,7 +33,7 @@ public class CreateFilesBasedOnState {
         double balance;
         final String QUIT = "999";
 
-        //These 2 Lines Will Cause Erorr!
+        //These 2 Lines Will Cause Erorr! These Methods Will be Added Next Assignment
         createEmptyFile(inStateFile, s);
         createEmptyFile(outOfStateFile, s);
 
