@@ -31,20 +31,5 @@ public class ReadStateFile {
         String[] array = new String[4];
         double balance = 0;
         double total = 0;
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
 }
