@@ -43,16 +43,5 @@ public class ReadStateFile {
         } catch (IOException e) {
             System.out.println("IO Exception");
         }
-
-
-
-
-
-
-
-
-
-
     }
-
 }
