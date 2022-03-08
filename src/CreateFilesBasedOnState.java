@@ -22,7 +22,7 @@ public class CreateFilesBasedOnState {
         final String BALANCE_FORMAT = "0000.00";
         String delimiter = ",";
         String s = ID_FORMAT + delimiter + NAME_FORMAT + delimiter + HOME_STATE + delimiter + BALANCE_FORMAT
-                + System.getProperty("line.seperator");
+                + System.getProperty("line.separator");
         final int RECSIZE = s.length();
 
         FileChannel fcIn = null;
